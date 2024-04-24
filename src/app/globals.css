@@ -19,6 +19,7 @@ html {
   --primary-1: #363738;
   --secondary: #F5F5F5;
   --secondary-1: #FEFAF1;
+  --text: #FAFAFA;
   --secondary-2: #db4444;
   --ash: #7d8184;
   --foreground-rgb: #000000;
@@ -71,6 +72,12 @@ body {
   color: var(--button-2);
 }
  
+
+.copy{
+  color: var(--text);
+  opacity: 0.7;
+  @apply w-full flex flex-row items-center justify-center;
+}
 
 .icon{
   @apply mx-2 cursor-pointer;

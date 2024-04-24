@@ -8,6 +8,7 @@ import { LuSearch } from "react-icons/lu";
 import { GrFavorite } from "react-icons/gr";
 import { IoCartOutline } from "react-icons/io5";
 import { FiUser } from "react-icons/fi";
+import { IoIosArrowDown } from "react-icons/io";
 
 
 const NavBar = () => {
@@ -37,10 +38,11 @@ const NavBar = () => {
         <p className="text-color text-center ">
           Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!{" "}
           <span className=" underline  cursor-pointer pl-2">Shop Now</span>
-        </p>
-        <div>
+        </p> 
+        <div className="flex flex-row items-center justify-center cursor-pointer"> 
           {" "}
-          <p className="text-color">English</p>
+          <p className="text-color">English</p> 
+          <IoIosArrowDown className="text-white ml-2"/>
         </div>
       </div>
 
