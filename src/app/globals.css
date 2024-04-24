@@ -1,33 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+
+* > * {
+  font-family: 'Inter', sans-serif;
+  margin: 0px;
+}
+
+html {
+  scroll-behavior:smooth;
+}
+
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --primary-1: #363738;
+  --secondary: #F5F5F5;
+  --secondary-1: #FEFAF1;
+  --secondary-2: #db4444;
+  --ash: #7d8184;
+  --foreground-rgb: #000000;
+  --background-rgb: #ffffff;
+  --hover-button-1: #a0bce0;
+  --hover-button-2: #e07575;
+  --button: #000000;
+  --button-1: #00ff66;
+  --button-2: #db4444;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --foreground-rgb: #ffffff;
+    --background-rgb: #000000;
   }
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: var(--foreground-rgb);
+  background: var(--background-rgb);
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+
+.bg-color-b{
+ background-color:  var(--button)
+}
+
+.text-color{
+  color: var(--secondary)
+}
+
+.app-logo{
+  font-weight: bold;
+  color: var(--button);
+  font-size: large;
+}
+
+.tab {
+
+  @apply px-4 cursor-pointer;
+}
+.tab:hover{
+  color: var(--button-2);
+}
+ 
+
+.icon{
+  @apply mx-2 cursor-pointer;
+}
+
+.search-input{
+  background-color: var(--secondary);
+  border-radius: 4px; 
+  @apply p-2 flex flex-row justify-around items-center; 
+}
+
+input { 
+  border: none;
+  outline: none;
+
+}
+
+input {
+  border: none;
+  background-color: var(--secondary);
+}
+
+input:focus {
+  outline: none;
+}
+
+/* Change the font size and style of the placeholder text */
+input::placeholder {
+  font-size: 14px;
 }
