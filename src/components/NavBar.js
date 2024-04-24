@@ -27,10 +27,10 @@ const NavBar = () => {
       }, []);
 
   return (
-    <div className={
-        shadow
-          ? "fixed w-full shadow-xl z-[100] ease-in-out duration-300"
-          : "fixed w-full  z-[100]"
+    <div className={""
+        // shadow
+        //   ? "fixed w-full shadow-xl z-[100] ease-in-out duration-300"
+        //   : "fixed w-full  z-[100]"
       }>
       {/* First Part */}
       <div className="bg-color-b w-full flex flex-row justify-between px-16 py-3">

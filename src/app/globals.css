@@ -82,6 +82,17 @@ body {
 .icon{
   @apply mx-2 cursor-pointer;
 }
+.not-found{ 
+  @apply text-7xl font-bold  ;
+}
+
+.not-found-btn{
+  background-color: var(--button-2);
+  color: var(--secondary);
+  border-radius: 4px; 
+
+  @apply p-3 ;
+}
 
 .search-input{
   background-color: var(--secondary);
