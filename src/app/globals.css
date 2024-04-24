@@ -86,6 +86,9 @@ body {
   color: var(--secondary);
   font-size: small;
   @apply cursor-pointer;
+} 
+.footer-tab-small:hover{
+  color: var(--hover-button-2)
 }
 
 .tab {
@@ -118,10 +121,41 @@ body {
   @apply p-3 ;
 }
 
+.not-found-btn-none{
+  background-color: var(--background-rgb);
+  color: var(--button-2);
+  border-radius: 4px; 
+
+  @apply p-3 ;
+}
+
+.button-outline{
+  background-color: var(--background-rgb);
+  color: var(--button);
+  border-radius: 4px; 
+  border: 1px solid var(--button);
+  @apply p-3 text-center w-full ;
+}
+
+.login-found-btn{
+  background-color: var(--button-2);
+  color: var(--secondary);
+  border-radius: 4px; 
+
+  @apply p-3 ;
+}
+
 .search-input{
   background-color: var(--secondary);
   border-radius: 4px; 
   @apply p-2 flex flex-row justify-around items-center; 
+}
+
+.auth-input {
+  background-color: var(--background-rgb);
+  border-bottom: 1px solid black;
+
+  @apply p-2 w-[100%]; 
 }
 
 
@@ -153,3 +187,4 @@ input::placeholder {
 .input-bg-grey{
   background-color: var(--secondary);
 }
+
