@@ -63,6 +63,30 @@ body {
   color: var(--button);
   font-size: large;
 }
+.app-logo-white{
+  font-weight: bold;
+  color: var(--secondary);
+  font-size: large;
+}
+
+.footer-tab-c{
+  font-weight: bold;
+  color: var(--secondary);
+  font-size: medium;
+  @apply cursor-pointer;
+}
+
+.footer-tab{
+  font-weight: bold;
+  color: var(--secondary);
+  font-size: medium;
+}
+.footer-tab-small{
+  font-weight: 400;
+  color: var(--secondary);
+  font-size: small;
+  @apply cursor-pointer;
+}
 
 .tab {
 
@@ -100,16 +124,22 @@ body {
   @apply p-2 flex flex-row justify-around items-center; 
 }
 
+
+.email-footer-input{
+  background-color: var(--button);
+  border-radius: 4px; 
+  border: #F5F5F5;
+  outline: auto;
+  @apply p-2 flex flex-row justify-around items-center; 
+}
+
 input { 
   border: none;
   outline: none;
 
 }
 
-input {
-  border: none;
-  background-color: var(--secondary);
-}
+
 
 input:focus {
   outline: none;
@@ -118,4 +148,8 @@ input:focus {
 /* Change the font size and style of the placeholder text */
 input::placeholder {
   font-size: 14px;
+}
+
+.input-bg-grey{
+  background-color: var(--secondary);
 }

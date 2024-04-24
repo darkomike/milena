@@ -63,7 +63,7 @@ const NavBar = () => {
         <div className="flex flex-row">
           {/* Search Input  */}
           <div className="search-input">
-            <input placeholder="What are you looking for?" />
+            <input placeholder="What are you looking for?" className="input-bg-grey"/>
             <LuSearch className="ml-2" />
           </div>
 
