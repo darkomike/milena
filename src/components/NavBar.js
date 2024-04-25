@@ -54,7 +54,7 @@ const NavBar = () => {
         {/* Tabs */}
         <ul className="flex flex-row justify-around">
           <li className="tab">Home</li>
-          <li className="tab">About</li>
+          <li className="tab"><Link href={'/about'}>About</Link></li>
           <li className="tab">
             <Link href={'/'}>Contact</Link>
           </li>

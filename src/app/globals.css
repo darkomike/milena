@@ -188,3 +188,8 @@ input::placeholder {
   background-color: var(--secondary);
 }
 
+
+.personal-image{
+  background-color: var(--secondary);
+  @apply h-[300px] w-full ; 
+} 
