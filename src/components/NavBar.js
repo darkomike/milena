@@ -1,6 +1,8 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import {appData} from "./constant"
+
 
 import { LuSearch } from "react-icons/lu";
 import { GrFavorite } from "react-icons/gr";
@@ -34,8 +36,9 @@ const NavBar = () => {
       }
     >
       {/* First Part */}
-      <div className="bg-color-b w-full flex flex-row justify-between px-16 py-3">
-        <div></div>
+      <div className="bg-color-b w-full"> 
+        <div className="w-[1170px] mx-auto flex flex-row justify-between  py-1">
+        <div ></div>
         <p className="text-color text-center ">
           Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!{" "}
           <span className=" underline  cursor-pointer pl-2">Shop Now</span>
@@ -45,12 +48,13 @@ const NavBar = () => {
           <p className="text-color">English</p>
           <IoIosArrowDown className="text-white ml-2" />
         </div>
+        </div>
       </div>
 
       {/* Second Part */}
-      <div className="px-16 w-full pt-8 pb-4 flex flex-row justify-between">
+      <div className="w-[1170px] mx-auto pt-8 pb-4 flex flex-row justify-between">
         {/* App Logo */}
-        <h1 className="app-logo">Exclusive</h1>
+        <h1 className="app-logo">{`${appData.appName}`}</h1>
 
         {/* Tabs */}
         <ul className="flex flex-row justify-around">
@@ -95,7 +99,8 @@ const NavBar = () => {
         </div>
       </div>
       <div className="h-[0.5px] w-full bg-black"></div>
-      <Breadcrumb crumbs={crumbs}/>
+      {/* <Breadcrumb crumbs={crumbs}/> */}
+
     </div>
   );
 };

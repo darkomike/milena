@@ -10,8 +10,9 @@ import Image  from "next/image";
 
 function Footer() {
   return (
-    <div className="bg-color-b w-full px-16 ">
-      {/* First Part */}
+    <div className="bg-color-b w-full">
+      <div className="w-[1170px] mx-auto">
+        {/* First Part */}
       <div className="flex flex-row items-start justify-between py-10">
         {/* Colulmn  1 */} 
         <div className="flex flex-col space-y-4 justify-start items-start">
@@ -79,6 +80,7 @@ function Footer() {
       {/* Second Part */}
       <div className="copy py-1 text-sm">
         <p>&#169; Copyright MikeSoft 2024. All right reserved</p>
+      </div>
       </div>
     </div>
   );

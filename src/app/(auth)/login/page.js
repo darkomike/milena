@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import {appData} from "../../../components/constant"
 
 export const metadata = {
   title: "MiLena Black | Login",
@@ -24,7 +25,7 @@ const Login = () => {
       <div className="w-[30%] pl-14">
         <form className="pl-16 flex flex-col items-start justify-center h-full space-y-4">
           <h3 className="text-center font-bold text-2xl">
-            Login In To Exclusive
+            {`Login In To ${appData.appName}`}
           </h3>
           <p className="text-center font-medium text-sm">
             Enter your details below

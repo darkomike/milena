@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FcGoogle } from "react-icons/fc";
+import appData from "../../../components/constant"
 
 export const metadata = {
   title: "MiLena Black | Sign Up",

@@ -1,4 +1,6 @@
 import CaroselCard from "@/components/CaroselCard";
+import CountdownTimer from "@/components/CountDownTimer";
+import SectionTag from "@/components/SectionTag";
 import Image from "next/image";
 import { IoIosArrowForward } from "react-icons/io";
 
@@ -8,8 +10,11 @@ export const metadata = {
 };
 
 export default function Home() {
+  // Set the target date (e.g., 30 day from now)
+  const targetDate = new Date();
+  targetDate.setDate(targetDate.getDate() + 30);
   return (
-    <main className="flex flex-col items-center justify-between">
+    <main className="flex flex-col justify-between gap-4">
       {/* First Side  */}
       <div className="home-first-container">
         {/* Left Side */}
@@ -48,7 +53,22 @@ export default function Home() {
           </ul>
         </div>
         {/* Right Side  */}
-        <CaroselCard src={'/iphone.png'}/>
+        <CaroselCard src={"/iphone.png"} />
+      </div>
+
+      {/* Second Side */}
+      <div className="home-second-container">
+        <SectionTag tag_name={"Today's"} />
+        <div className="flex flex-row  items-center w-full">
+          <h1 className="font-bold text-2xl mr-28">Flash Sales</h1>
+          <div className="flex flex-row items-center justify-between">
+            <CountdownTimer targetDate={targetDate} />
+            
+            <div>
+            {/* TODO: */}
+            </div>
+          </div>
+        </div>
       </div>
     </main>
   );
