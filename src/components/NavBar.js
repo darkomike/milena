@@ -8,6 +8,7 @@ import { IoCartOutline } from "react-icons/io5";
 import { FiUser } from "react-icons/fi";
 import { IoIosArrowDown } from "react-icons/io";
 import Link from "next/link";
+import Breadcrumb, { crumbs } from "./Breadcrumb";
 
 const NavBar = () => {
   const [shadow, setShadow] = useState(false);
@@ -53,10 +54,10 @@ const NavBar = () => {
 
         {/* Tabs */}
         <ul className="flex flex-row justify-around">
-          <li className="tab">Home</li>
+          <li className="tab"><Link href={'/'}>Home</Link></li>
           <li className="tab"><Link href={'/about'}>About</Link></li>
           <li className="tab">
-            <Link href={'/'}>Contact</Link>
+            <Link href={'/contact'}>Contact</Link> 
           </li>
           <li className="tab">
             <Link href={"/register"}> Sign Up</Link>
@@ -94,6 +95,7 @@ const NavBar = () => {
         </div>
       </div>
       <div className="h-[0.5px] w-full bg-black"></div>
+      <Breadcrumb crumbs={crumbs}/>
     </div>
   );
 };

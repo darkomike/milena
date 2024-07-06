@@ -1,25 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
 * > * {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   margin: 0px;
 }
 
 html {
-  scroll-behavior:smooth;
+  scroll-behavior: smooth;
 }
 
 :root {
   --primary-1: #363738;
-  --secondary: #F5F5F5;
-  --secondary-1: #FEFAF1;
-  --text: #FAFAFA;
+  --secondary: #f5f5f5;
+  --secondary-1: #fefaf1;
+  --text: #fafafa;
   --secondary-2: #db4444;
   --ash: #7d8184;
   --foreground-rgb: #000000;
@@ -49,131 +47,124 @@ body {
   }
 }
 
-
-.bg-color-b{
- background-color:  var(--button)
+.bg-color-b {
+  background-color: var(--button);
 }
 
-.text-color{
-  color: var(--secondary)
+.text-color {
+  color: var(--secondary);
 }
 
-.app-logo{
+.app-logo {
   font-weight: bold;
   color: var(--button);
   font-size: large;
 }
-.app-logo-white{
+.app-logo-white {
   font-weight: bold;
   color: var(--secondary);
   font-size: large;
 }
 
-.footer-tab-c{
+.footer-tab-c {
   font-weight: bold;
   color: var(--secondary);
   font-size: medium;
   @apply cursor-pointer;
 }
 
-.footer-tab{
+.footer-tab {
   font-weight: bold;
   color: var(--secondary);
   font-size: medium;
 }
-.footer-tab-small{
+.footer-tab-small {
   font-weight: 400;
   color: var(--secondary);
   font-size: small;
   @apply cursor-pointer;
-} 
-.footer-tab-small:hover{
-  color: var(--hover-button-2)
+}
+.footer-tab-small:hover {
+  color: var(--hover-button-2);
 }
 
 .tab {
-
   @apply px-4 cursor-pointer;
 }
-.tab:hover{
+.tab:hover {
   color: var(--button-2);
 }
- 
 
-.copy{
+.copy {
   color: var(--text);
   opacity: 0.7;
   @apply w-full flex flex-row items-center justify-center;
 }
 
-.icon{
+.icon {
   @apply mx-2 cursor-pointer;
 }
-.not-found{ 
-  @apply text-7xl font-bold  ;
+.not-found {
+  @apply text-7xl font-bold;
 }
 
-.not-found-btn{
+.not-found-btn {
   background-color: var(--button-2);
   color: var(--secondary);
-  border-radius: 4px; 
+  border-radius: 4px;
 
-  @apply p-3 ;
+  @apply p-3;
 }
 
-.not-found-btn-none{
+.not-found-btn-none {
   background-color: var(--background-rgb);
   color: var(--button-2);
-  border-radius: 4px; 
+  border-radius: 4px;
 
-  @apply p-3 ;
+  @apply p-3;
 }
 
-.button-outline{
+.button-outline {
   background-color: var(--background-rgb);
   color: var(--button);
-  border-radius: 4px; 
+  border-radius: 4px;
   border: 1px solid var(--button);
-  @apply p-3 text-center w-full ;
+  @apply p-3 text-center w-full;
 }
 
-.login-found-btn{
+.login-found-btn {
   background-color: var(--button-2);
   color: var(--secondary);
-  border-radius: 4px; 
+  border-radius: 4px;
 
-  @apply p-3 ;
+  @apply p-3;
 }
 
-.search-input{
+.search-input {
   background-color: var(--secondary);
-  border-radius: 4px; 
-  @apply p-2 flex flex-row justify-around items-center; 
+  border-radius: 4px;
+  @apply p-2 flex flex-row justify-around items-center;
 }
 
 .auth-input {
   background-color: var(--background-rgb);
   border-bottom: 1px solid black;
 
-  @apply p-2 w-[100%]; 
+  @apply p-2 w-[100%];
 }
 
-
-.email-footer-input{
+.email-footer-input {
   background-color: var(--button);
-  border-radius: 4px; 
-  border: #F5F5F5;
+  border-radius: 4px;
+  border: #f5f5f5;
   outline: auto;
-  @apply p-2 flex flex-row justify-around items-center; 
+  @apply p-2 flex flex-row justify-around items-center;
 }
 
-input { 
+input {
   border: none;
   outline: none;
-
 }
-
-
 
 input:focus {
   outline: none;
@@ -184,12 +175,43 @@ input::placeholder {
   font-size: 14px;
 }
 
-.input-bg-grey{
+.input-bg-grey {
   background-color: var(--secondary);
 }
 
-
-.personal-image{
+.personal-image {
   background-color: var(--secondary);
-  @apply h-[300px] w-full ; 
-} 
+  @apply h-[300px] w-full;
+}
+
+.home-tab {
+  @apply flex flex-row items-center justify-between space-x-4 pt-2 cursor-pointer;
+}
+
+.home-tab:hover {
+  color: var(--secondary-2);
+}
+
+.crumb-tab {
+  @apply flex items-center text-black text-sm;
+}
+
+.crumb-tab:hover {
+  color: var(--secondary-2);
+}
+
+.home-first-container {
+  border-top: 1px solid var(--ash);
+
+  @apply w-full flex flex-row mb-6;
+}
+
+.home-tab-container {
+  border-right: 1px solid var(--ash);
+
+  @apply pl-16 pr-2 flex w-min;
+}
+
+.home-carousel-container {
+  @apply mr-16 relative w-full mt-8 ml-8 bg-black;
+}
